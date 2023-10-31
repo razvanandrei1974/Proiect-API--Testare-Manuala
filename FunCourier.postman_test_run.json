@@ -1,0 +1,578 @@
+{
+	"id": "e45537db-174e-4d31-bfca-bfc6734145b1",
+	"name": "FunCourier",
+	"timestamp": "2023-10-31T14:05:12.734Z",
+	"collection_id": "30222760-d18d783f-df42-4f8d-bff4-f5600f38e3ed",
+	"folder_id": 0,
+	"environment_id": "30222760-2980656b-1377-4e0b-8292-ac67da10e743",
+	"totalPass": 26,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-10-31T14:05:05.942Z",
+	"totalFail": 13,
+	"results": [
+		{
+			"id": "eeee4b4d-9e5b-49e3-9996-3f73c728e2b0",
+			"name": "PostBaseAuth",
+			"url": "https://api.fancourier.ro/login?username=razvan.ungar@gmail.com&password=Msft25947191@",
+			"time": 482,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Validate the response structure - status and data fields": true,
+				"Token is a non-empty string": true,
+				"Validate token format": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the response structure - status and data fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate token format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				482
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Validate the response structure - status and data fields": true,
+					"Token is a non-empty string": true,
+					"Validate token format": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "a54e0481-083b-4da6-b0fa-48f109a110d8",
+			"name": "GetServices",
+			"url": "https://api.fancourier.ro/reports/services",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": false,
+				"Content-Type is present": true,
+				"Status code name has string": false,
+				"Schema is valid": true,
+				"Response time is less than 300ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 300ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": false,
+					"Content-Type is present": true,
+					"Status code name has string": false,
+					"Schema is valid": true,
+					"Response time is less than 300ms": true
+				}
+			]
+		},
+		{
+			"id": "458b5740-7b8d-4f30-8eac-316e3c2802b7",
+			"name": "GetServiceOptions",
+			"url": "https://api.fancourier.ro/reports/service-options?clientid=razvan.ungar@gmail.com&service=standard",
+			"time": 239,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": false,
+				"Response time is less than 250ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 250ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				239
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": false,
+					"Response time is less than 250ms": true
+				}
+			]
+		},
+		{
+			"id": "5ee84010-f3bb-4b1a-973f-0598c35e75b8",
+			"name": "GetPrintAWB",
+			"url": "https://api.fancourier.ro//awb/label?clientId=7032158&awbs[]=4304300015798\n &pdf=1&language=ro",
+			"time": 139,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				139
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "c8c0f76b-c9eb-4fcd-845f-d79a0067a35d",
+			"name": "GetStergereAWB",
+			"url": "https://api.fancourier.ro/awb?clientId=7032158&awb=2081300120386",
+			"time": 164,
+			"responseCode": {
+				"code": 405,
+				"name": "Method Not Allowed"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				164
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6464b9e1-ed82-469d-9263-0551b14d3262",
+			"name": "PostAWBIntern",
+			"url": "https://api.fancourier.ro/intern-awb?clientid=7032158&username=Msft25947191@",
+			"time": 204,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				204
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "835ec5fd-ff9e-4ddc-9a39-f15dab1e3da6",
+			"name": "GetCounties",
+			"url": "https://api.fancourier.ro/reports/counties",
+			"time": 447,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Validate the 'status' field in the response": true,
+				"Verify that the 'data' array is present and contains at least one element": true,
+				"Validate that the 'id' field in the 'data' array is a non-negative integer": true,
+				"Validate that the 'name' field in the 'data' array is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the 'status' field in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'data' array is present and contains at least one element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that the 'id' field in the 'data' array is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate that the 'name' field in the 'data' array is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				447
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Validate the 'status' field in the response": true,
+					"Verify that the 'data' array is present and contains at least one element": true,
+					"Validate that the 'id' field in the 'data' array is a non-negative integer": true,
+					"Validate that the 'name' field in the 'data' array is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "63e9d7f3-497f-493c-af96-47af87a9e2e5",
+			"name": "GetLocalities",
+			"url": "https://api.fancourier.ro/reports/localities",
+			"time": 2075,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has required fields": true,
+				"Verify that the 'data' array is present and not empty": true,
+				"Response time is less than 500ms": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the 'data' array is present and not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				2075
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has required fields": true,
+					"Verify that the 'data' array is present and not empty": true,
+					"Response time is less than 500ms": false
+				}
+			]
+		},
+		{
+			"id": "ab7b0618-19f4-40ad-b4ba-a60dd26c22be",
+			"name": "PostOrder",
+			"url": "https://api.fancourier.ro/order",
+			"time": 206,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Schema is valid": false
+			},
+			"testPassFailCounts": {
+				"Schema is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				206
+			],
+			"allTests": [
+				{
+					"Schema is valid": false
+				}
+			]
+		},
+		{
+			"id": "8b8ee1b5-6583-4830-9cc4-f93a62979afd",
+			"name": "GetStreet",
+			"url": "https://api.fancourier.ro/reports/streets?id=101960",
+			"time": 304,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true,
+				"Response time is less than 300ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 300ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				304
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true,
+					"Response time is less than 300ms": false
+				}
+			]
+		},
+		{
+			"id": "0d7d3614-9575-406c-a8a1-085ae2fd5b9e",
+			"name": "GetPickupPoints",
+			"url": "https://api.fancourier.ro/reports/pickup-points?type=office",
+			"time": 344,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": false,
+				"Content-Type is present": true,
+				"Response time is less than 300ms": false,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 300ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				344
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": false,
+					"Content-Type is present": true,
+					"Response time is less than 300ms": false,
+					"Schema is valid": true
+				}
+			]
+		},
+		{
+			"id": "27bb3250-0819-4fc8-9a0e-89f6234fcec1",
+			"name": "GetPickupPointsIndividual",
+			"url": "https://api.fancourier.ro/reports/pickup-points?type=office",
+			"time": 304,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Pick Up Points Individual": false,
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pick Up Points Individual": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				304
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Pick Up Points Individual": false,
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "401f9dd1-8dad-468a-b648-80f79cbb184d",
+			"name": "GetAWBInternalTariff",
+			"url": "https://api.fancourier.ro/awb/internal-tariff?clientId=7032158&info[service]=Cont \nColector&info[payment]=expeditor&info[weight]=1&info[packages][parcel]=1&recipien\nt[locality]=Bucuresti&recipient[county]=Bucuresti ",
+			"time": 160,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5289,
+	"collection": {
+		"requests": [
+			{
+				"id": "eeee4b4d-9e5b-49e3-9996-3f73c728e2b0",
+				"method": "POST"
+			},
+			{
+				"id": "a54e0481-083b-4da6-b0fa-48f109a110d8",
+				"method": "GET"
+			},
+			{
+				"id": "458b5740-7b8d-4f30-8eac-316e3c2802b7",
+				"method": "GET"
+			},
+			{
+				"id": "5ee84010-f3bb-4b1a-973f-0598c35e75b8",
+				"method": "GET"
+			},
+			{
+				"id": "c8c0f76b-c9eb-4fcd-845f-d79a0067a35d",
+				"method": "GET"
+			},
+			{
+				"id": "6464b9e1-ed82-469d-9263-0551b14d3262",
+				"method": "POST"
+			},
+			{
+				"id": "835ec5fd-ff9e-4ddc-9a39-f15dab1e3da6",
+				"method": "GET"
+			},
+			{
+				"id": "63e9d7f3-497f-493c-af96-47af87a9e2e5",
+				"method": "GET"
+			},
+			{
+				"id": "ab7b0618-19f4-40ad-b4ba-a60dd26c22be",
+				"method": "POST"
+			},
+			{
+				"id": "8b8ee1b5-6583-4830-9cc4-f93a62979afd",
+				"method": "GET"
+			},
+			{
+				"id": "0d7d3614-9575-406c-a8a1-085ae2fd5b9e",
+				"method": "GET"
+			},
+			{
+				"id": "27bb3250-0819-4fc8-9a0e-89f6234fcec1",
+				"method": "GET"
+			},
+			{
+				"id": "401f9dd1-8dad-468a-b648-80f79cbb184d",
+				"method": "GET"
+			}
+		]
+	}
+}
