@@ -1,5 +1,11 @@
 # API-Testing
 
+# Test Plan 
+
+[Test Plan Fun Courier](https://github.com/razvanandrei1974/API-Testing/blob/main/RO_FANCourier_API-2.0-100523.pdf)
+
+
+
 ![image](https://github.com/razvanandrei1974/API-Testing/assets/144438182/33b332a5-3d0c-4576-826d-4153ec21627c)
 
 ![image](https://github.com/razvanandrei1974/API-Testing/assets/144438182/5a552fd2-97db-4426-afaf-8c5f1a350813)
