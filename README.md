@@ -50,8 +50,8 @@ Metoda : HTTP POST
 Response : JSON
 Important : Se va folosi ca Bearer Token pentru autentificarea si autorizarea fiecarui endpoint
 Params:
-• username – numele de utilizator folosit la logarea in aplicatia selfAWB
-• password – parola folosita la logarea in aplicatia selfAWB
+- • username – numele de utilizator folosit la logarea in aplicatia selfAWB
+* • password – parola folosita la logarea in aplicatia selfAWB
 
 
 [Test Plan Fun Courier](https://github.com/razvanandrei1974/API-Testing/blob/main/RO_FANCourier_API-2.0-100523.pdf)
