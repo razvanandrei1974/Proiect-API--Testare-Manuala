@@ -62,4 +62,9 @@ Params:
 ![Run Results 2](https://github.com/razvanandrei1974/API-Testing/blob/main/RUN%20RESULTS%202.jpg)
 ![Run Results 3](https://github.com/razvanandrei1974/API-Testing/blob/main/RUN%20RESULTS%203.jpg)
 
+## Newman Run Test
 
+![Newman Run1](https://github.com/razvanandrei1974/API-Testing/blob/main/NEWMAN%20RUN%201.jpg)
+![Newman Run2](https://github.com/razvanandrei1974/API-Testing/blob/main/NEWMAN%20RUN%202.jpg)
+![Newman Run3](https://github.com/razvanandrei1974/API-Testing/blob/main/NEWMAN%20RUN%203.jpg)
+![Newman Run4](https://github.com/razvanandrei1974/API-Testing/blob/main/NEWMAN%20RUN%204.jpg)
