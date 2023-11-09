@@ -58,6 +58,8 @@ Params:
 
 [Run Results](https://github.com/razvanandrei1974/API-Testing/blob/main/FunCourier.postman_test_run.json)
 
-![Run Results 1]()
+![Run Results 1](https://github.com/razvanandrei1974/API-Testing/blob/main/RUN%20RESULTS%201.jpg)
+![Run Results 2](https://github.com/razvanandrei1974/API-Testing/blob/main/RUN%20RESULTS%202.jpg)
+![Run Results 3](https://github.com/razvanandrei1974/API-Testing/blob/main/RUN%20RESULTS%203.jpg)
 
 
