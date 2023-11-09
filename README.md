@@ -56,7 +56,7 @@ Params:
 
 [Test Plan Fun Courier](https://github.com/razvanandrei1974/API-Testing/blob/main/RO_FANCourier_API-2.0-100523.pdf)
 
-
+[Run Results](https://github.com/razvanandrei1974/API-Testing/blob/main/FunCourier.postman_test_run.json)
 
 ![image](https://github.com/razvanandrei1974/API-Testing/assets/144438182/33b332a5-3d0c-4576-826d-4153ec21627c)
 
