@@ -3,11 +3,7 @@
 # Test Plan 
 
 ### INTRODUCERE
-Pentru utilizarea API-ului de integrare selfAWB este necesar sa aveti incheiat un contract cu FAN Courier.
-In cazul in care aveti un contract incheiat, insa nu ati primit datele de logare in aplicatia selfAWB, puteti contacta colegii de la Departamentul selfAWB la adresa selfawb@fancourier.ro.
-In cazul in care nu aveti un contract incheiat cu FAN Courier si doriti acest lucru, puteti contacta colegii de la Departamentul Sales la adresa sales.bucuresti@fancourier.ro.
-Pentru suport privind aceastra integrare puteti contacta colegii de la Departamentul Presales la adresa presales@fancourier.ro.
-Pentru Autentificare se foloseste endpoint-ul Base Auth.
+# Under construction
 
 Pentru Generarea AWB-ului se folosesc endpoint-urile:
 ### 1. Tipuri Servicii
