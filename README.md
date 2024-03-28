@@ -1,21 +1,22 @@
 # API-Testing
 
 ## 🎌 Autorization Token
-![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/fc8286c5-85be-4df7-b980-54b8b531aa5c)
-![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/6ad9c544-4f0d-4c20-8e30-a3afcc253d91)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/30156934-3084-450d-b339-83878c88b52a)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/c6b43356-d73d-4d87-b8c9-a97bfd4c68dd)
+
 
 
 # ▶️ Results 
 
-![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/e4b4a801-28a8-4aa4-941f-c26c8bb23ad5)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/a748736f-e216-449b-a86b-2e2b4ba3368f)
+
 
 ## ▶️ Detailed tests
 
-![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/74afbdca-8b88-4b03-a4f0-597c07182dc4)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/41bc976a-5bbe-480a-a2a5-ea11769136d1)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/cec643cd-36d6-457a-9fee-e620f72f86aa)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/e04deb63-b125-49a4-a723-3ac85bbd2337)
 
-![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/df774aa6-26e2-4e9b-87d5-2cedbceffca4)
-
-![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/8a77e39a-4497-4e28-80ef-9d214142b09a)
 
 
 
