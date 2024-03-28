@@ -1,4 +1,6 @@
-# API-Testing
+# API-Testing - Oblio Software 
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/dafe1edf-cbad-4580-98fc-2282a6725875)
+
 
 ## 🎌 Autorization Token
 ![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/30156934-3084-450d-b339-83878c88b52a)
