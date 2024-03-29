@@ -41,25 +41,25 @@ Raspunsurile vin in format JSON, daca cererea a fost facuta cu succes se va trim
 Pe pagina noastra de GitHub https://github.com/OblioSoftware veti gasi exemple de implementare ale API-ului.
 Autorizare
 
-### 📌 Generare token de acces
-https://www.oblio.eu/api/authorize/token - POST
+## 📌 Generare token de acces
+### _https://www.oblio.eu/api/authorize/token - POST_
 Oblio REST API foloseste modulul OAuth 2.0 pentru autorizare. Acesta are nevoie de parametrul "client_id" care reprezinta email-ul cu care va autentificati in Oblio si "client_secret" care este un token pe care il gasiti in cont in sectiunea "Setari" > "Date Cont". Pentru securitate, token-ul "client_secret" se regenereaza de fiecare data cand se reseteaza parola. Pentru obtinerea token-ului de acces se trimite o cerere prin metoda "POST" impreuna cu parametrii "client_id" si "client_secret" catre adresa https://www.oblio.eu/api/authorize/token
 Toate celelalte cereri catre Oblio REST API se fac folosind header-ul "Authorization" cu valoarea "Bearer {access_token}" unde {access_token} se obtine din cererea de mai sus.
 
 ## Nomenclatoare
 
-### Nomenclator companii
-https://www.oblio.eu/api/nomenclature/companies - GET
+## Nomenclator companii
+### _https://www.oblio.eu/api/nomenclature/companies - GET_
 Returneaza lista de companii asociate cu contul Oblio
 
-### Nomenclator cote TVA
-https://www.oblio.eu/api/nomenclature/vat_rates - GET
+## Nomenclator cote TVA
+### _https://www.oblio.eu/api/nomenclature/vat_rates - GET_
 Returneaza lista de cote TVA pentru o anumita firma
 PARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
 
-### Nomenclator clienti
-https://www.oblio.eu/api/nomenclature/clients - GET
+## Nomenclator clienti
+### _https://www.oblio.eu/api/nomenclature/clients - GET_
 Returneaza lista de clienti pentru o anumita firma
 PARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
@@ -67,8 +67,8 @@ name	Numele clientului cautat
 clientCif	Ciful clientului cautat
 offset	Vor aparea initial maxim 250 de rezultate, este de preferat sa fie multiplu de 250 (0, 250, 500 etc.), valoarea implicita este 0
 
-### Nomenclator produse
-https://www.oblio.eu/api/nomenclature/products - GET
+## Nomenclator produse
+### _https://www.oblio.eu/api/nomenclature/products - GET_
 Returneaza lista de produse pentru o anumita firma. Pentru servicii nu se tine cont de gestiunea unde se afla si deci nu apare rubrica "stock".
 PARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
@@ -77,28 +77,29 @@ code	Codul produsului cautat
 management	Gestiunea in care se face cautarea (La folosirea acestui parametru produsele vor aparea listate ca serviciile)
 workStation	Punctul de lucru al gestiunii in care se face cautarea
 
-### Nomenclator serii documente
-https://www.oblio.eu/api/nomenclature/series - GET
+## Nomenclator serii documente
+### _https://www.oblio.eu/api/nomenclature/series - GET_
 Returneaza lista de serii documente pentru o anumita firma
 PARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
 
-### Nomenclator limbi
-https://www.oblio.eu/api/nomenclature/languages - GET
+## Nomenclator limbi
+### _https://www.oblio.eu/api/nomenclature/languages - GET_
 Returneaza lista de limbi straine pentru o anumita firmaPARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
 
-### Nomenclator gestiuni
-https://www.oblio.eu/api/nomenclature/management - GET
+## Nomenclator gestiuni
+### _https://www.oblio.eu/api/nomenclature/management - GET_
 Returneaza lista de gestiuni pentru o anumita firma, functioneaza doar daca sunt activate stocurile
 PARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
 
 ## 📌 Emitere documente
 
-### Emitere proforma
+## Emitere proforma
 Emiterea de documente folosind Oblio REST API se face prin metoda POST trimitand datele in forma RAW in format JSON.
-https://www.oblio.eu/api/docs/proforma - POST
+
+### _https://www.oblio.eu/api/docs/proforma - POST_
 Emiterea proformelor se face cu urmatorii parametrii:
 Parametri document
 PARAMETRU	EXPLICATIE
@@ -169,12 +170,12 @@ discountType	Discount procentual sau valoric, ia valorile "procentual" sau "valo
 discount *	Valoare discount
 discountAllAbove	Ia valoarea 1 daca este valabil pentru toate produsele fara discount dinaintea sa sau 0 doar pentru primul produs de deasupra sa, valoarea implicita este 0
 
-### Emitere avize
-https://www.oblio.eu/api/docs/notice - POST
+## Emitere avize
+### _https://www.oblio.eu/api/docs/notice - POST_
 Emiterea avizelor se face identic cu emiterea proformelor cu diferenta ca avizele nu au parametrul "noticeNumber" si au optiunea (in cazul in care este activat stocul) de a folosi parametrul "useStock" care are valoarea implicita 1
 
-### Emitere facturi
-https://www.oblio.eu/api/docs/invoice - POST
+## Emitere facturi
+### _https://www.oblio.eu/api/docs/invoice - POST_
 Emiterea facturilor se face identic cu emiterea proformelor cu diferenta ca facturile mai au si urmatorii parametrii:
 Parametri document
 PARAMETRU	EXPLICATIE
@@ -198,9 +199,10 @@ value	Valoarea incasata, valoarea implicita este totalul facturii care urmeaza s
 issueDate	Data emiterii in format AAAA-LL-ZZ, valoare implicita este ziua curenta (valabil pentru incasare factura)
 
 ## 📌Mentiuni
-### Incasare factura
+## Incasare factura
 Incasare factura
-https://www.oblio.eu/api/docs/invoice/collect - PUT
+
+### _https://www.oblio.eu/api/docs/invoice/collect - PUT_
 Incasare facturilor se face cu urmatorii parametrii:
 Parametri incasare factura
 PARAMETRU	EXPLICATIE
@@ -211,8 +213,8 @@ collect *	Incasare document. Vezi "Parametri incasare document"
 
 ## 📌 Vizualizare documente
 
-### Vizualizare factura
-https://www.oblio.eu/api/docs/invoice?cif={cif}&seriesName={seriesName}&number={number} - GET
+## Vizualizare factura
+### _https://www.oblio.eu/api/docs/invoice?cif={cif}&seriesName={seriesName}&number={number} - GET_
 Parametri vizualizare document
 PARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
@@ -222,26 +224,27 @@ Vizualizare proforma
 https://www.oblio.eu/api/docs/proforma?cif={cif}&seriesName={seriesName}&number={number} - GET
 Parametrii sunt aceiasi ca la vizualizare factura
 
-### Vizualizare aviz
-https://www.oblio.eu/api/docs/notice?cif={cif}&seriesName={seriesName}&number={number} - GET
+## Vizualizare aviz
+### _https://www.oblio.eu/api/docs/notice?cif={cif}&seriesName={seriesName}&number={number} - GET_
 Parametrii sunt aceiasi ca la vizualizare factura
 
 
 ## 📌 Anulare documente
 
-### Anulare factura
-https://www.oblio.eu/api/docs/invoice/cancel - PUT
+## Anulare factura
+### _https://www.oblio.eu/api/docs/invoice/cancel - PUT_
 Parametri anulare document
 PARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
 seriesName *	Numele seriei documentului
 number *	Numarul seriei documentului
 
-### Anulare proforma
-https://www.oblio.eu/api/docs/proforma/cancel - PUT
+## Anulare proforma
+### _https://www.oblio.eu/api/docs/proforma/cancel - PUT_
 Parametrii sunt aceiasi ca la anulare factura
-### Anulare aviz
-https://www.oblio.eu/api/docs/notice/cancel - PUT
+
+## Anulare aviz
+### _https://www.oblio.eu/api/docs/notice/cancel - PUT_
 Parametrii sunt aceiasi ca la anulare factura
 Restaurare documente
 Restaurare factura
@@ -255,32 +258,32 @@ Restaurare proforma
 https://www.oblio.eu/api/docs/proforma/restore - PUT
 Parametrii sunt aceiasi ca la restaurare factura
 
-### Restaurare aviz
-https://www.oblio.eu/api/docs/notice/restore - PUT
+## Restaurare aviz
+### _https://www.oblio.eu/api/docs/notice/restore - PUT_
 Parametrii sunt aceiasi ca la restaurare factura
 
 
 ## 📌 Stergere documente
 
-### Stergere factura
-https://www.oblio.eu/api/docs/invoice - DELETE
+## Stergere factura
+### _https://www.oblio.eu/api/docs/invoice - DELETE_
 Functia de stergere se poate folosi doar pentru ultimul document din serie.
 PARAMETRU	EXPLICATIE
 cif *	CIF-ul firmei
 seriesName *	Numele seriei documentului
 number *	Numarul seriei documentului
 
-### Stergere proforma
-https://www.oblio.eu/api/docs/proforma - DELETE
+## Stergere proforma
+### _https://www.oblio.eu/api/docs/proforma - DELETE_
 Parametrii sunt aceiasi ca la stergere factura
-### Stergere aviz
-https://www.oblio.eu/api/docs/notice - DELETE
+## Stergere aviz
+### _https://www.oblio.eu/api/docs/notice - DELETE_
 Parametrii sunt aceiasi ca la stergere factura
 
 ## 📌 Raport documente
 
-### Listare facturi
-https://www.oblio.eu/api/docs/invoice/list - GET
+## Listare facturi
+### _https://www.oblio.eu/api/docs/invoice/list - GET_
 Functia de listare a facturilor emise in Oblio.
 Parametri listare documente
 PARAMETRU	EXPLICATIE
@@ -302,8 +305,8 @@ offset	Vor aparea initial maxim 100 de rezultate, este de preferat sa fie multip
 
 ## 📌 SPV
 
-### Trimite factura in SPV
-https://www.oblio.eu/api/docs/einvoice - POST
+## Trimite factura in SPV
+### _https://www.oblio.eu/api/docs/einvoice - POST_
 Functia de Trimite factura in SPV pentru facturile emise in Oblio.
 Parametri pentru Trimite factura in SPV
 PARAMETRU	EXPLICATIE
@@ -311,8 +314,8 @@ cif *	CIF-ul firmei
 seriesName *	Filtru dupa Numele seriei
 number *	Filtru dupa Numarul documentului
 
-### Descarca arhiva SPV
-https://www.oblio.eu/api/docs/einvoice - GET
+## Descarca arhiva SPV
+### _https://www.oblio.eu/api/docs/einvoice - GET_
 Functia de descarcare arhiva SPV pentru facturile emise in Oblio.
 Parametri descarcare arhiva SPV
 PARAMETRU	EXPLICATIE
