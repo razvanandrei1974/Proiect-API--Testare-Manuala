@@ -1,0 +1,518 @@
+{
+	"id": "31eb1a54-c875-490c-b7a8-b149cc3ee923",
+	"name": "Oblio",
+	"timestamp": "2024-03-28T15:47:56.798Z",
+	"collection_id": "30222760-7c1c0537-8231-422e-88ec-fd08d2e634c2",
+	"folder_id": 0,
+	"environment_id": "30222760-cf6d4432-75fa-4508-8d3e-e9c6188e743c",
+	"totalPass": 29,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-03-28T15:47:51.887Z",
+	"totalFail": 12,
+	"results": [
+		{
+			"id": "d17c9f70-60a9-4269-89ee-840b1255151b",
+			"name": "GetCompanies",
+			"url": "https://www.oblio.eu/api/nomenclature/clients?cif=48757960",
+			"time": 58,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the correct Content-Type header": true,
+				"Response includes status field": true,
+				"Status field has a value of 200": true,
+				"Data field should be an not empty array": true,
+				"Check keys from the firm data": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the correct Content-Type header": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response includes status field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status field has a value of 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data field should be an not empty array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check keys from the firm data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				58
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the correct Content-Type header": true,
+					"Response includes status field": true,
+					"Status field has a value of 200": true,
+					"Data field should be an not empty array": true,
+					"Check keys from the firm data": true
+				}
+			]
+		},
+		{
+			"id": "1c7138fd-aea5-47c8-965e-0e42716fc16e",
+			"name": "GetCompanies Copy",
+			"url": "https://www.oblio.eu/api/nomenclature/clients?cif=35930294",
+			"time": 72,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the correct Content-Type header": true,
+				"Response includes status field": true,
+				"Status field has a value of 0": true,
+				"Data field should be an empty array": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the correct Content-Type header": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response includes status field": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status field has a value of 0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data field should be an empty array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				72
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the correct Content-Type header": true,
+					"Response includes status field": true,
+					"Status field has a value of 0": true,
+					"Data field should be an empty array": true
+				}
+			]
+		},
+		{
+			"id": "a2b4b250-823d-49c1-b761-85c6850ecebe",
+			"name": "PostToken",
+			"url": "https://www.oblio.eu/api/authorize/token?client_id=razvan.ungar@gmail.com&client_secret=3660bf1c8689c4456c0944a5c68e855d0e038e57",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Access token is a non-empty string": true,
+				"Expires in is a positive integer": false,
+				"Token type is a string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Access token is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Expires in is a positive integer": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Token type is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Access token is a non-empty string": true,
+					"Expires in is a positive integer": false,
+					"Token type is a string": true
+				}
+			]
+		},
+		{
+			"id": "3c709f71-982d-41d6-b362-465b38a10364",
+			"name": "GetProducts",
+			"url": "https://www.oblio.eu/api/nomenclature/products?cif=35930294",
+			"time": 704,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"MeasuringUnit is a non-empty string": true,
+				"Price is a non-negative number": false,
+				"VatPercentage is a non-negative number": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"MeasuringUnit is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Price is a non-negative number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"VatPercentage is a non-negative number": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				704
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"MeasuringUnit is a non-empty string": true,
+					"Price is a non-negative number": false,
+					"VatPercentage is a non-negative number": false
+				}
+			]
+		},
+		{
+			"id": "f0c48076-57b9-418d-aa24-a846ff0d0edc",
+			"name": "GetDocSeries",
+			"url": "https://www.oblio.eu/api/nomenclature/series?cif=35930294",
+			"time": 62,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"MeasuringUnit is a non-empty string": false,
+				"Price is a non-negative number": false,
+				"VatPercentage is a non-negative number": false,
+				"Schema is valid": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"MeasuringUnit is a non-empty string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Price is a non-negative number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"VatPercentage is a non-negative number": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Schema is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				62
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"MeasuringUnit is a non-empty string": false,
+					"Price is a non-negative number": false,
+					"VatPercentage is a non-negative number": false,
+					"Schema is valid": false
+				}
+			]
+		},
+		{
+			"id": "86962abc-d5f9-40fc-866c-a27c2a125dd5",
+			"name": "GetGestiune",
+			"url": "https://www.oblio.eu/api/nomenclature/management?cif=35930294",
+			"time": 40,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body matches string": false,
+				"Response time is less than 200ms": true,
+				"Successful POST request": false,
+				"Status code name has string": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code name has string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body matches string": false,
+					"Response time is less than 200ms": true,
+					"Successful POST request": false,
+					"Status code name has string": false
+				}
+			]
+		},
+		{
+			"id": "8ab7cacd-4d48-45a8-a7cb-fca749ff8768",
+			"name": "PostProforma",
+			"url": "https://www.oblio.eu/api/docs/proforma ?cif=23485789&client=FD Capital Management&issueDate=2024-03-15&dueDate=2024-03-30&seriesName=BNC007",
+			"time": 67,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Response status code is 400": true,
+				"Response has the required fields - status and statusMessage": true,
+				"Status is a non-zero integer": true,
+				"Status message is a non-empty string": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - status and statusMessage": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status is a non-zero integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status message is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Response status code is 400": true,
+					"Response has the required fields - status and statusMessage": true,
+					"Status is a non-zero integer": true,
+					"Status message is a non-empty string": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "ffae87d2-b520-48db-b33c-a8dd3e67cc8d",
+			"name": "PostInvoice",
+			"url": "https://www.oblio.eu/api/docs/invoice ",
+			"time": 60,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "2552cc18-fedf-4499-9a76-1ab21dafa93f",
+			"name": "GetDoc",
+			"url": "https://www.oblio.eu/api/docs/invoice?cif={23485789}&seriesName={bnc2024}&number={010}",
+			"time": 72,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time is less than 200ms": true,
+				"Schema is valid": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				72
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time is less than 200ms": true,
+					"Schema is valid": false
+				}
+			]
+		},
+		{
+			"id": "d8da3fb7-90ae-417c-8273-be568a076820",
+			"name": "DeleteInvoice",
+			"url": "https://www.oblio.eu/api/docs/invoice ?cif=35930294",
+			"time": 53,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"Status code is 400": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"Status code is 400": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1241,
+	"collection": {
+		"requests": [
+			{
+				"id": "d17c9f70-60a9-4269-89ee-840b1255151b",
+				"method": "GET"
+			},
+			{
+				"id": "1c7138fd-aea5-47c8-965e-0e42716fc16e",
+				"method": "GET"
+			},
+			{
+				"id": "a2b4b250-823d-49c1-b761-85c6850ecebe",
+				"method": "POST"
+			},
+			{
+				"id": "3c709f71-982d-41d6-b362-465b38a10364",
+				"method": "GET"
+			},
+			{
+				"id": "f0c48076-57b9-418d-aa24-a846ff0d0edc",
+				"method": "GET"
+			},
+			{
+				"id": "86962abc-d5f9-40fc-866c-a27c2a125dd5",
+				"method": "GET"
+			},
+			{
+				"id": "8ab7cacd-4d48-45a8-a7cb-fca749ff8768",
+				"method": "POST"
+			},
+			{
+				"id": "ffae87d2-b520-48db-b33c-a8dd3e67cc8d",
+				"method": "POST"
+			},
+			{
+				"id": "2552cc18-fedf-4499-9a76-1ab21dafa93f",
+				"method": "GET"
+			},
+			{
+				"id": "d8da3fb7-90ae-417c-8273-be568a076820",
+				"method": "DELETE"
+			}
+		]
+	}
+}
