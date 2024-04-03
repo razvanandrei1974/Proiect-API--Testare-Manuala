@@ -323,4 +323,16 @@ PARAMETRU	EXPLICATIE
 * seriesName *	Filtru dupa Numele seriei
 + number *	Filtru dupa Numarul documentului
 
+# 📍 _Rulare colectie teste cu Newman_
+
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/8b56239a-d247-4117-aad2-5c1211b71c07)
+
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/528f7fe8-3d50-4e55-aea8-787ed1aa005b)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/f554a383-9270-4761-b2fc-6967da29d2bb)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/d930a552-963c-45c2-9cd7-c42460086a49)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/d4b79a31-e945-4bd0-8af9-131511923114)
+![image](https://github.com/razvanandrei1974/Proiect-API--Testare-Manuala/assets/144438182/f73e2952-26fa-43d8-842b-5f358b8609d7)
+
+
+
 
